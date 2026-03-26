@@ -1,0 +1,81 @@
+@define-color window_bg_color #0a0a0a;
+@define-color window_fg_color #ffffff;
+@define-color headerbar_bg_color #111111;
+@define-color headerbar_fg_color #ffffff;
+@define-color view_bg_color #111111;
+@define-color base_color #000000;
+@define-color text_color #ffffff;
+@define-color selected_bg_color #007aff;
+@define-color selected_fg_color #ffffff;
+
+window,
+.background,
+.stack,
+messagedialog {
+    background-color: #0a0a0a !important;
+    color: #ffffff !important;
+}
+
+scrolledwindow,
+viewport,
+textview,
+list,
+row {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+}
+
+headerbar {
+    background-color: #111111 !important;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.2) 100%) !important;
+}
+
+window {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+headerbar {
+    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0.8) 0%, rgba(35, 35, 35, 0.8) 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+}
+
+headerbar .title {
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+button {
+    background-image: linear-gradient(to bottom, rgba(80, 80, 80, 0.9) 0%, rgba(55, 55, 55, 0.9) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 1px 2px rgba(0,0,0,0.2);
+    color: #eeeeee;
+    padding: 4px 12px;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, rgba(95, 95, 95, 0.9) 0%, rgba(70, 70, 70, 0.9) 100%);
+}
+
+button:active {
+    background-color: rgba(45, 45, 45, 0.9);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.suggested-action {
+    background-image: linear-gradient(to bottom, #007aff 0%, #0056b3 100%);
+    border: 1px solid #004085;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.destructive-action {
+    background-image: linear-gradient(to bottom, #ff3b30 0%, #c1271d 100%);
+    border: 1px solid #911e16;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.3);
+    color: white;
+}
