@@ -18,8 +18,8 @@ window,
 .background,
 .stack,
 messagedialog {
-    background-color: @window_bg_color !important;
-    color: @window_fg_color !important;
+    background-color: @window_bg_color;
+    color: @window_fg_color;
 }
 
 scrolledwindow,
@@ -27,12 +27,12 @@ viewport,
 textview,
 list,
 row {
-    background-color: @view_bg_color !important;
-    color: @window_fg_color !important;
+    background-color: @view_bg_color;
+    color: @window_fg_color;
 }
 
 window {
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
 }
 
